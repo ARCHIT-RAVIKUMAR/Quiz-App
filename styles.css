@@ -21,13 +21,8 @@ body {
   background-color: hsl(var(--hue), 100%, 20%);
 }
 
-body.correct {
-  --hue: var(--hue-correct);
-}
-
-body.wrong {
-  --hue: var(--hue-wrong);
-}
+body.correct { --hue: var(--hue-correct); }
+body.wrong { --hue: var(--hue-wrong); }
 
 .container {
   width: 800px;
@@ -55,18 +50,9 @@ body.wrong {
   outline: none;
 }
 
-.btn:hover {
-  border-color: black;
-}
-
-.btn.correct {
-  --hue: var(--hue-correct);
-  color: black;
-}
-
-.btn.wrong {
-  --hue: var(--hue-wrong);
-}
+.btn:hover { border-color: black; }
+.btn.correct { --hue: var(--hue-correct); color: black; }
+.btn.wrong { --hue: var(--hue-wrong); }
 
 .start-btn, .next-btn {
   font-size: 1.5rem;
@@ -80,6 +66,8 @@ body.wrong {
   align-items: center;
 }
 
-.hide {
-  display: none;
+.hide { display: none; }
+
+#result-container {
+  margin-top: 20px;
 }
